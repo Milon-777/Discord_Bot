@@ -36,8 +36,6 @@ var host = builder.Build();
 ExcelPackage.License.SetNonCommercialPersonal("Milon Bot");
 host.AddModules(typeof(Program).Assembly);
 
-Console.WriteLine(builder.Configuration["StarExpedition:JsonPath"]);
-
 try
 {
 	await host.RunAsync();
